@@ -62,13 +62,6 @@ html{
     font-weight: bolder;
 }
 
-#bar{
-    color: #ff5733;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    display: none;
-}
-
 .back{
     background-image: url(images/ipad-tablet-technology-touch.jpg);
     width: 100%;
@@ -102,7 +95,7 @@ html{
     color: #7f8c8d ;
     margin-top: 5%;
     font-family: 'Monotype Corsiva';
-    font-size: 1.3rem;
+    font-size: 2rem;
     margin-bottom: 1.4rem;
 }
 
@@ -577,19 +570,8 @@ margin-top: 2rem;
     #item .icon i{
         padding:0 15px 0 15px ;
     }
-    
-    #bar{
-        display: initial;
-        cursor: pointer;
-    }
 
     .mid p{
-        font-size: 1.1rem;
-        margin-bottom: 1.2rem;
-    }
-
-    .mid p1{
-        font-family: "OldeEnglish";
         font-size: 1.1rem;
         margin-bottom: 1.2rem;
     }
@@ -795,11 +777,6 @@ margin-top: 2rem;
         margin-bottom: 1rem;
     }
 
-    .mid p1{
-        font-size: 1rem;
-        margin-bottom: 1rem;
-    }
-
     .mid h2{
         font-size: 2.1rem;
     }
@@ -907,9 +884,6 @@ margin-top: 2rem;
 @media screen and (max-width:496px){
 
     .mid p{
-        margin-bottom: 0.8rem;
-    }
-    .mid p1{
         margin-bottom: 0.8rem;
     }
     .mid h2{

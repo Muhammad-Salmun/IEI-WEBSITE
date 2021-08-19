@@ -70,7 +70,7 @@ html{
     z-index: -1;
 }
 
-#item_l .logo{
+.logo{
     margin: 15px; 
     height: 90px;
     width: auto; 

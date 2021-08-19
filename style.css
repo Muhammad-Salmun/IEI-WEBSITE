@@ -51,7 +51,7 @@ html{
     cursor: pointer;
 }
 
-#item l{
+#item_l{
     list-style: none;
     padding-right: 10px;
 }
@@ -70,7 +70,7 @@ html{
     z-index: -1;
 }
 
-#item .logo{
+#item_l .logo{
     margin: 15px; 
     height: 90px;
     width: auto; 
@@ -958,6 +958,13 @@ margin-top: 2rem;
 @font-face {
 	font-family: 'OldeEnglish';
 	src:url('fonts/OldeEnglish.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Monotype Corsovia';
+	src:url('fonts/MonotypeCorsiva_Regular.ttf');
 	font-weight: normal;
 	font-style: normal;
 }

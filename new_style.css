@@ -41,3 +41,13 @@ ul li a {
     display: block;
     padding: 1rem 5rem ;
 }
+
+ul li a:hover{
+    color: #ff5733;
+}
+
+.bg{
+    width: 100%;
+    height: auto;
+
+}

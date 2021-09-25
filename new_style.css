@@ -12,13 +12,13 @@ body{
 
 nav{
     width: 100%;
-    height: 30%;
+    height: fit-content;
     background-color: #000;
     text-align: center;
 }
 
 ul{
-    
+    min-width: fit-content;
 }
 
 .logo{
@@ -34,20 +34,66 @@ ul li{
 }
 
 ul li a {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 100;
     color: #eee;
     list-style: none;
     display: block;
-    padding: 1rem 5rem ;
+    padding: 1rem 3rem ;
 }
 
 ul li a:hover{
     color: #ff5733;
 }
 
-.bg{
+.overlay{
     width: 100%;
-    height: auto;
+    height: 50vh;
+    text-align: center;
+    background-image: url('images/ipad-tablet-technology-touch.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
+.overlay .index-banner{
+    background: #171819;
+    width: 100%;
+    height: 50vh;
+    opacity: 0.85;
+    display: table;
+}
+
+.heading-text{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-banner h2{
+    color: #fff ;
+    font-family: 'OldeEnglish';
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 6rem;
+}
+
+.index-banner p{
+    color: #7f8c8d ;
+    font-size: 3rem;
+    font-family: 'Monotype Corsiva';
+    line-height: 4rem;    
+}
+
+@font-face {
+	font-family: 'OldeEnglish';
+	src:url('fonts/OldeEnglish.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Monotype Corsiva';
+	src:url('fonts/MonotypeCorsiva_Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
 }

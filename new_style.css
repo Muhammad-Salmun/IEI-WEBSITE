@@ -85,13 +85,14 @@ ul li a:hover{
     padding-top: 2rem;    
 }
 
-.about{
-    height: calc(60vh - 30rem);
+.container{
+    height: calc(60% - 25rem);
     width: calc(100% - 10rem);
-    padding: 5rem;
+    padding: 5rem 5rem 0;
+    overflow: hidden;
 }
 
-.about .title{
+.title{
     position: relative;
     width: max-content;
     font-family: sans-serif;
@@ -102,7 +103,7 @@ ul li a:hover{
     
 }
 
-.about .title::after{
+.title::after{
     content: "";
     position: absolute;
     height: 6px;
@@ -120,8 +121,71 @@ ul li a:hover{
     line-height: 3.8rem;
 }
 
+.events-upcoming{
+    padding-top: 4rem;    
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.card{
+    height: 41rem;
+    color: #171819;    
+    background-image: url('images/card-bg.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.card-title{
+    padding: 16rem 1rem 2rem 2rem;
+    font-family: sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    text-shadow: #000;
+}
+
+.card-body{
+    width: 60%;
+    padding: 2rem 1rem 2rem 2rem;
+    font-family: 'Monotype Corsovia';
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.card a{
+    padding: 0 2rem;
+    position: absolute;
+    left: 7rem;
+    border-radius: 3px;
+    border: 2px solid #000;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    color: #171819;
+    font-family: 'Monotype Corsovia';
+    font-size: 2rem;
+    line-height: 5rem;
+    display: inline-block
+}
 
 
+@media only screen and (min-width :1024px) {
+    
+    .overlay{
+        height: 40%;
+    }
+    
+    .overlay .index-banner{
+        height: 40%;
+    }
+
+    .heading-text h2{
+        margin-top: 6rem;
+    }
+    .heading-text p{
+        margin-bottom: 6rem;
+    }
+}
 @font-face {
 	font-family: 'OldeEnglish';
 	src:url('fonts/OldeEnglish.woff');

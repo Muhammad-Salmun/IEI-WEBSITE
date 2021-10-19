@@ -131,10 +131,11 @@ ul li a:hover{
 .card{
     height: 41rem;
     color: #171819;    
-    background-image: url('images/card-bg.png');
+    background-image: url('images/tile-card\ c4c.png');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+    border-radius: 2rem ;
 }
 
 .card-title{

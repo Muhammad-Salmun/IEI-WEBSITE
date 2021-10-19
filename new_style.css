@@ -8,8 +8,9 @@
 
 :root{
     --grey: #171819;
-    --Monotype-Corsovia: 'Monotype Corsovia';
-    --organge: #ff5733;
+    --Monotype-Corsiva: 'Monotype Corsiva';
+    --organge: #f13a11;
+    --poppins: 'Poppins';
 }
 
 body{
@@ -88,7 +89,7 @@ ul li a:hover{
 .index-banner p{
     color: #7f8c8d ;
     font-size: 4rem;
-    font-family: 'Monotype Corsovia';
+    font-family: var(--Monotype-Corsiva);
     line-height: 5.2rem;
     padding-top: 2rem;    
 }
@@ -163,7 +164,7 @@ ul li a:hover{
 
 .event-details h5{
     padding: 4rem 1rem 2.8rem;
-    font-family: var(--Monotype-Corsovia);
+    font-family:var(--poppins);
     font-size: 4rem;
     font-weight: 500;
     text-shadow: #000;
@@ -172,7 +173,7 @@ ul li a:hover{
 .event-details p{
     width: 80%;
     padding: 0rem 1rem 4rem;
-    font-family: var(--Monotype-Corsovia);
+    font-family: var(--poppins);
     font-size: 2.2rem;
     font-weight: 400;
 }
@@ -181,21 +182,15 @@ ul li a:hover{
     position: relative;
     line-height: 3rem;
     padding: 1rem;
-    font-family: var(--Monotype-Corsovia);
-    font-size: 2.3rem;
-    color: var(--grey);
-    border: 2px solid #171819;  
+    font-family:var(--poppins);
+    font-size: 2.5rem;
+    color:white;
+    background-color: #111;  
     border-radius: 1rem;  
 }
 
-.button:hover{
-    border-color: grey;
-    background-color: grey;
-    color: white;
-}
-
 /* ------------------ Responsive Design ------------------ */
-@media only screen and (min-width :600px) {
+@media only screen and (min-width: 1000px) {
     
     .overlay{
         height: 40%;
@@ -205,11 +200,16 @@ ul li a:hover{
         height: 40%;
     }
 
-    .heading-text h2{
+    .heading-text h2{        
+        font-family: var(--Monotype-Corsiva);
         margin-top: 6rem;
     }
     .heading-text p{
         margin-bottom: 6rem;
+    }
+
+    .events-upcoming{
+        width: 40vw;
     }
 }
 

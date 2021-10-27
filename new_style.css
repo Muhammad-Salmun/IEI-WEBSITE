@@ -8,8 +8,11 @@
 
 :root{
     --grey: #171819;
+    --dark-grey: #222;
+    --cream: #eee;
+    --white: #fff;
+    --orange: #f13a11;
     --Monotype-Corsiva: 'Monotype Corsiva';
-    --organge: #f13a11;
     --poppins: 'Poppins';
 }
 
@@ -21,7 +24,7 @@ body{
 nav{
     width: 100%;
     height: fit-content;
-    background-color: #000;
+    background-color: var(--dark-grey);
     text-align: center;
 }
 
@@ -51,7 +54,7 @@ ul li a {
 }
 
 ul li a:hover{
-    color: var(--organge);
+    color: var(--orange);
 }
 
 /* ------------------bg image------------------ */
@@ -63,6 +66,7 @@ ul li a:hover{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 
 .overlay .index-banner{
@@ -141,56 +145,69 @@ ul li a:hover{
     padding-left: 10%;
     display: inline-block;    
     border-radius: 2rem ;
-    overflow: hidden;
 }
 
 .card{
-    height: 30rem;
     color: var(--grey);    
     background-image: url('images/tile-card-c4c.png');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+    border-radius: 2rem;
 }
 
 .event-details{
-    background-color: white;
-    height: 30rem;
     width: 100%;
-    padding-left: 2.5rem;
+    padding-top: 60%;
+    opacity: 90%;
 
 }
 
+.text-container{
+    height: 28rem;
+    background-color: #222;
+}
+
 .event-details h5{
-    padding: 4rem 1rem 2.8rem;
+    padding: 4rem 3rem 2.8rem;
     font-family:var(--poppins);
     font-size: 4rem;
     font-weight: 500;
-    text-shadow: #000;
+    color: var(--white);
+    text-shadow: #fff;
 }
 
 .event-details p{
     width: 80%;
-    padding: 0rem 1rem 4rem;
+    padding: 0rem 3rem 4rem;
     font-family: var(--poppins);
     font-size: 2.2rem;
     font-weight: 400;
-    color: var(--grey);
+    color: #eee;
 }
 
 /* ------------------ Button - learn more ------------------ */
+.button-container{
+    padding-left: 3rem;
+}
 .button{
     position: relative;
     line-height: 3rem;
     padding: 1rem;
     font-family:var(--poppins);
-    font-size: 2.4rem;
-    color:white;
-    background-color: #595a5a;  
-    border-radius: 1rem;  
+    font-size: 2rem;
+    color:var(--orange);
+    background-color: transparent;  
+    border-radius: 0.6rem;
+    border: 2px solid #ff5733;
 }
+
+.button:hover{
+    background-color: white;
+    border: 2px solid white;
+}
+
+
 
 /* ------------------ Responsive Design ------------------ */
 @media only screen and (min-width: 1000px) {

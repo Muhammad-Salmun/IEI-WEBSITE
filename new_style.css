@@ -134,10 +134,11 @@ ul li a:hover{
 }
 
 /* ------------------Upcoming Events------------------ */
-.events-upcoming{
-    padding-top: 4rem;    
-    width: 100%;
+.events-upcoming{  
+    width: 80%;
     height: auto;
+    padding-top: 4rem;  
+    padding-left: 10%;
     display: inline-block;    
     border-radius: 2rem ;
     overflow: hidden;
@@ -176,16 +177,18 @@ ul li a:hover{
     font-family: var(--poppins);
     font-size: 2.2rem;
     font-weight: 400;
+    color: var(--grey);
 }
 
+/* ------------------ Button - learn more ------------------ */
 .button{
     position: relative;
     line-height: 3rem;
     padding: 1rem;
     font-family:var(--poppins);
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color:white;
-    background-color: #111;  
+    background-color: #595a5a;  
     border-radius: 1rem;  
 }
 
@@ -200,8 +203,7 @@ ul li a:hover{
         height: 40%;
     }
 
-    .heading-text h2{        
-        font-family: var(--Monotype-Corsiva);
+    .heading-text h2{
         margin-top: 6rem;
     }
     .heading-text p{

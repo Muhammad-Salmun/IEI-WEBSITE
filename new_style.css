@@ -154,8 +154,8 @@ ul li a:hover{
   .card {
     max-width: 33.333%;
     padding: .75rem;
-    margin-bottom: 2rem;
     border: 0;
+
     flex-basis: 15rem;
     flex-grow: 0;
     flex-shrink: 0;

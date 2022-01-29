@@ -27,27 +27,27 @@ nav{
     text-align: center;
 }
 .logo{
-    height: 10rem;
+    height: 6rem;
 }
 
 ul{
-    width: 100%;
+    width: 100%;    
+    display: flex;
+    flex-direction: row;
 }
 
 ul li{
+    width: 25%;
     text-transform: uppercase;
     text-align: center;
-    display: inline-block;
-    padding: 0rem 1rem;
 }
 
 ul li a {
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 100;
     color: var(--cream);
-    list-style: none;
     display: block;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 ul li a:hover{
@@ -67,7 +67,7 @@ ul li a:hover{
 
 .heading-text-container{
     width: 100%;
-    padding-top: 4rem;
+    padding-top: 2rem;
     height: auto;
     text-align: center;
     background-color: var(--dark-grey);
@@ -78,25 +78,25 @@ ul li a:hover{
     
     color: #fff ;
     font-family: 'OldeEnglish';
-    font-size: 10rem;
+    font-size: 6rem;
     font-weight: 400;
-    line-height: 11rem;
+    line-height: 6rem;
 }
 
 .heading-text-container p{
     color: #7f8c8d ;
-    font-size: 4rem;
+    font-size: 2rem;
     font-family: var(--Monotype-Corsiva);
-    line-height: 5.2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;    
+    line-height: 2.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;    
 }
 
 /* ------------------container common------------------ */
 .container{
-    height: calc(60% - 25rem);
-    width: calc(100% - 10rem);
-    padding: 5rem 5rem 0;
+    height: calc(60% - 4rem);
+    width: calc(100% - 2rem);
+    padding: 1rem 1rem 0;
     overflow: hidden;
 }
 
@@ -105,20 +105,19 @@ ul li a:hover{
     position: relative;
     width: max-content;
     font-family: sans-serif;
-    font-size: 4rem;
+    font-size: 1.8rem;
     font-weight: 400;
     color: var(--grey);
-    line-height: 7rem;
-    
+    line-height: 5rem;
 }
 
 .title::after{
     content: "";
     position: absolute;
-    height: 6px;
+    height: 4px;
     width: 80%;
     background: #000;
-    left: 1.5rem;
+    left: 1rem;
     bottom: 0; 
 }
 
@@ -126,19 +125,20 @@ ul li a:hover{
 .about .content{
     text-align: justify;
     text-justify: inter-word;
-    padding-top: 4rem;
+    padding-top: 2rem;
     font-family: sans-serif;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 3.8rem;
+    line-height: 2rem;
 }
 
 /* ------------------Upcoming Events------------------ */
 .events-upcoming{
     width: 100%;
+    max-height: 30rem;
     padding-top: 4rem;
-    height: max-content;
     overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .row{
@@ -152,16 +152,16 @@ ul li a:hover{
 }
 
   .card {
-    max-width: 50%;
+    max-width: 300px;
     padding: .75rem;
     border: 0;
-
-    flex-basis: 25rem;
+    
+    flex-basis: 45rem;
     flex-grow: 0;
     flex-shrink: 0;
 }
 
-.card img{
+.card > img{
     max-width: 100%;
     border-radius: 1rem;
 }
@@ -173,15 +173,6 @@ ul li a:hover{
     font-weight: 500;
     color: var(--white);
     text-shadow: var(--dark-grey);
-}
-
-.card p{
-    width: 20rem;
-    padding: 0rem 0rem 4rem;
-    font-family: var(--poppins);
-    font-size: 2.2rem;
-    font-weight: 400;
-    color: var(--dark-grey);
 }
 
 /* ------------------ Button - learn more ------------------ */
@@ -202,45 +193,75 @@ ul li a:hover{
 
 /* ------------------ Our Team ------------------ */
 .our-team{
-    height: auto;
-    padding: 4rem 5%;
-    display: inline-block;
+    width: 100%;
+    height: 25rem;
+    margin: 4rem 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
-.our-team h6{
-    padding: 4rem 0rem 2.8rem;
-    font-family:sans-serif;
-    font-size: 4rem;
-    font-weight: 500;
-    color: var(--white);
-    text-shadow: var(--dark-grey);
+.our-team .row .card{
+    flex-basis: 15rem;
+    display: block;
+    text-align: center;    
+    font-family: sans-serif;
+    color: var(--dark-grey);
+    text-shadow: var(--white);
+}
 
+.our-team .row .card > img{
+    height: 15rem;
+}
+
+.our-team .card h5{
+    padding: 0.3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+}
+
+.our-team .card h6{
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 /* ------------------ Footer ------------------ */
 footer {
     width: 100%;
-    bottom: 0px;
+    padding: 1.5rem 0;
+    margin-top: auto;
     background-color: #000;
     color: #fff;
-    padding-top:20px;
-    padding-bottom:50px;
-    text-align:center;
     font-size:30px;
     font-weight:bold;
 }
 
+.social-media{
+    padding-left: 1rem;
+} 
+
+.social-media > img{
+    width: 3rem;
+    border-radius: 1.5rem;
+}
+
 /* styles for browsers larger than 600px; */
-@media screen and (min-width: 600px){
+@media only screen and (min-width: 390px){
     
     .card:hover{
         transform: scale(1.05);
     }
+}
+
+@media only screen and (max-width: 600px) {
     
-    .button:hover{
-        background-color: white;
-        border: 2px solid white;
+    nav{
+        height: 6rem;
     }
+    ul{
+        visibility: hidden;
+    }
+
 }
 
 /* ------------------ Fonts ------------------ */

@@ -76,18 +76,21 @@ ul li a:hover{
 
 .heading-text-container h2{
     
+    padding: 0 2rem;
     color: #fff ;
     font-family: 'OldeEnglish';
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 400;
-    line-height: 6rem;
+    line-height: 4.5rem;
 }
 
 .heading-text-container p{
+
+    padding: 0 2rem;
     color: #7f8c8d ;
     font-size: 2rem;
     font-family: var(--Monotype-Corsiva);
-    line-height: 2.1rem;
+    line-height: 2.2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;    
 }
@@ -127,7 +130,7 @@ ul li a:hover{
     text-justify: inter-word;
     padding-top: 2rem;
     font-family: sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 400;
     line-height: 2rem;
 }
@@ -201,7 +204,7 @@ ul li a:hover{
 }
 
 .our-team .row .card{
-    flex-basis: 15rem;
+    flex-basis: 13rem;
     display: block;
     text-align: center;    
     font-family: sans-serif;
@@ -211,17 +214,18 @@ ul li a:hover{
 
 .our-team .row .card > img{
     height: 15rem;
+    max-width: 12rem;
 }
 
 .our-team .card h5{
     padding: 0.3rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--dark-grey);
 }
 
 .our-team .card h6{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
@@ -241,8 +245,8 @@ footer {
 } 
 
 .social-media > img{
-    width: 3rem;
-    border-radius: 1.5rem;
+    width: 1.5rem;
+    border-radius: 2rem;
 }
 
 /* styles for browsers larger than 600px; */

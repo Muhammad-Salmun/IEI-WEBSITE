@@ -30,17 +30,17 @@ nav{
     height: 6rem;
     background-color: var(--dark-grey);
     text-align: center;
-
+    overflow: hidden;
 }
 .logo{
     height: 6rem;
     width: auto;
 }
 
-ul{  
+ul{
+    visibility: hidden;
     display: flex;
     flex-direction: row;
-    visibility: hidden;
 }
 
 ul li{
@@ -145,7 +145,7 @@ ul li a:hover{
     line-height: 2rem;
 }
 
-/* ------------------Upcoming Events------------------ */
+/* ------------------Our Events------------------ */
 .events-upcoming{
     max-height: 30rem;
     padding-top: 4rem;
@@ -156,19 +156,16 @@ ul li a:hover{
 .row{
     height: 100%;
     align-items: stretch;
+
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
 }
 
   .card {
     max-width: 300px;
-    padding: .75rem;
-    border: 0;
     
-    flex-basis: 45rem;
+    /* flex-basis: 45rem; */
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -213,6 +210,7 @@ ul li a:hover{
 
 .our-team .row .card{
     flex-basis: 13rem;
+    padding: .75rem;
     display: block;
     text-align: center;    
     font-family: sans-serif;
@@ -258,24 +256,25 @@ footer {
 }
 
 /* styles for browsers larger than 600px; */
+
 @media only screen and (min-width: 600px) {
     
     nav{
-        height: auto;
+        height: 6rem;
     }
     ul{
         visibility: visible;
+        flex-basis: 8rem;
     }
     .card:hover{
         transform: scale(1.05);
     }
     .container{
         --container_padding: 10rem;
+        font-size: 3rem;
     }
 
 }
-
-
 
 /* ------------------ Fonts ------------------ */
 @font-face {

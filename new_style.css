@@ -1,6 +1,7 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 0;    
+    width: 100%;
     text-decoration: none;
     list-style: none;
     font-family:"Poppins", sans-serif;
@@ -14,6 +15,10 @@
     --orange: #f13a11;
     --Monotype-Corsiva: 'Monotype Corsiva';
     --poppins: 'Poppins';
+
+    --container_padding: 2rem;
+    --footer_padding: 1.5rem;
+    --heading_padding: 1.8rem;
 }
 
 body{
@@ -22,22 +27,23 @@ body{
 
 /* ------------------Navigation Bar---------- */
 nav{
-    width: 100%;
+    height: 6rem;
     background-color: var(--dark-grey);
     text-align: center;
+
 }
 .logo{
     height: 6rem;
+    width: auto;
 }
 
-ul{
-    width: 100%;    
+ul{  
     display: flex;
     flex-direction: row;
+    visibility: hidden;
 }
 
 ul li{
-    width: 25%;
     text-transform: uppercase;
     text-align: center;
 }
@@ -55,28 +61,35 @@ ul li a:hover{
 }
 
 /* ------------------bg image------------------ */
-.overlay{
+.heading-container{
     width: 100%;
+}
+.overlay{
     height: auto;
     text-align: center;
     background-image: url('images/ipad-tablet-technology-touch.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
+}
+
+.heading-img{
+    max-width: 100%;
+    height: auto;
+    text-align: center;
 }
 
 .heading-text-container{
-    width: 100%;
-    padding-top: 2rem;
-    height: auto;
-    text-align: center;
+    width: clac(100% - (2 * var(--heading_padding)));
+    word-wrap: break-word;
     background-color: var(--dark-grey);
     opacity: 0.9;
+    padding: var(--heading_padding);
 }
 
-.heading-text-container h2{
-    
-    padding: 0 2rem;
+.heading-text-container h2{    
+    word-wrap: break-word;
     color: #fff ;
     font-family: 'OldeEnglish';
     font-size: 4rem;
@@ -85,8 +98,7 @@ ul li a:hover{
 }
 
 .heading-text-container p{
-
-    padding: 0 2rem;
+    word-wrap: break-word;
     color: #7f8c8d ;
     font-size: 2rem;
     font-family: var(--Monotype-Corsiva);
@@ -97,10 +109,9 @@ ul li a:hover{
 
 /* ------------------container common------------------ */
 .container{
-    height: calc(60% - 4rem);
-    width: calc(100% - 2rem);
-    padding: 1rem 1rem 0;
-    overflow: hidden;
+    width: calc(100% - (2 * var(--container_padding)));
+    padding: var(--container_padding);
+    
 }
 
 /* ------------------Title common------------------ */
@@ -127,7 +138,6 @@ ul li a:hover{
 /* ------------------About Us------------------ */
 .about .content{
     text-align: justify;
-    text-justify: inter-word;
     padding-top: 2rem;
     font-family: sans-serif;
     font-size: 1.25rem;
@@ -137,7 +147,6 @@ ul li a:hover{
 
 /* ------------------Upcoming Events------------------ */
 .events-upcoming{
-    width: 100%;
     max-height: 30rem;
     padding-top: 4rem;
     overflow-x: auto;
@@ -165,7 +174,7 @@ ul li a:hover{
 }
 
 .card > img{
-    max-width: 100%;
+    max-width: 90%;
     border-radius: 1rem;
 }
 
@@ -196,7 +205,6 @@ ul li a:hover{
 
 /* ------------------ Our Team ------------------ */
 .our-team{
-    width: 100%;
     height: 25rem;
     margin: 4rem 1rem;
     overflow-x: auto;
@@ -231,8 +239,8 @@ ul li a:hover{
 
 /* ------------------ Footer ------------------ */
 footer {
-    width: 100%;
-    padding: 1.5rem 0;
+    width: calc(100% - (2 * var(--footer_padding)));
+    padding: var(--footer_padding);
     margin-top: auto;
     background-color: #000;
     color: #fff;
@@ -250,23 +258,24 @@ footer {
 }
 
 /* styles for browsers larger than 600px; */
-@media only screen and (min-width: 390px){
+@media only screen and (min-width: 600px) {
     
+    nav{
+        height: auto;
+    }
+    ul{
+        visibility: visible;
+    }
     .card:hover{
         transform: scale(1.05);
     }
-}
-
-@media only screen and (max-width: 600px) {
-    
-    nav{
-        height: 6rem;
-    }
-    ul{
-        visibility: hidden;
+    .container{
+        --container_padding: 10rem;
     }
 
 }
+
+
 
 /* ------------------ Fonts ------------------ */
 @font-face {

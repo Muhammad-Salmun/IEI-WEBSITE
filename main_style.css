@@ -175,19 +175,22 @@ ul li a:hover{
 }
 
 /* ------------------ Button - learn more ------------------ */
+.button-container{
+    padding-top: 1rem;
+}
+
 button{
+    width: fit-content;
+
     font-family: var(--poppins);
     font-weight: 400;
     font-size: var(--button_font_size);
     line-height: calc(var(--button_font_size) + 0.5);
-    color:var(--orange);
-    background-color: transparent;  
+    color:var(--white);
+    background-color: black;  
     border-radius: 0.6rem;
-    border: 2px solid #ff5733;
-}
 
-button :hover{
-    color: var(--orange);
+    padding: 0.9rem 1.8rem;
 }
 
 /* ------------------ Our Team ------------------ */

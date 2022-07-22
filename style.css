@@ -9,7 +9,7 @@
 
 :root{
     --grey: #171819;
-    --dark-grey: rgb(49, 42, 42);
+    --dark-grey: #222;
     --cream: #eee;
     --white: #fff;
     --orange: #f13a11;
@@ -17,7 +17,7 @@
     --poppins: 'Poppins';
 
     --nav_block_padding: 1rem; /*HOME...*/
-    --no_of_nav_block_elements: 4;
+    --no_of_nav_block_elements: 5;
     --heading_padding: 1.8rem; /* a century of... */
     --heading_font_size: 4rem; /*Intitution...*/
     --container_padding: 2rem;
@@ -154,18 +154,18 @@ ul li a:hover{
     flex-wrap: nowrap;
 }
 
-  .card {
+.events-upcoming .card {
     max-width: 300px;
     flex-grow: 0;
     flex-shrink: 0;
 }
 
-.card > img{
+.events-upcoming .card > img{
     max-width: 90%;
     border-radius: 1rem;
 }
 
-.card h5{
+.events-upcoming .card h5{
     padding: 4rem 0rem 2.8rem;
     font-family:sans-serif;
     font-size: 4rem;
@@ -195,13 +195,16 @@ button{
 
 /* ------------------ Our Team ------------------ */
 .our-team{
-    height: 25rem;
-    margin: 4rem 1rem;
+    height: 22rem;
+    padding-top: 4rem;
     overflow-x: auto;
     overflow-y: hidden;
 }
 
 .our-team .row .card{
+    max-width: 300px;
+    flex-grow: 0;
+    flex-shrink: 0;
     flex-basis: 13rem;
     padding: .75rem;
     display: block;
@@ -212,14 +215,15 @@ button{
 }
 
 .our-team .row .card > img{
-    height: 15rem;
+    border-radius: 1rem;
+    height: 14rem;
     max-width: 12rem;
 }
 
 .our-team .card h5{
     padding: 0.3rem;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--dark-grey);
 }
 
@@ -282,18 +286,24 @@ footer {
         --heading_font_size: 6rem;
         padding: 3rem 0;
     }   
-
+/* ------------------card common------------------ */
     .card:hover{
         transform: scale(1.05);
     }
-
+/* ------------------container common------------------ */
     .container{
         --container_padding: 15rem;
         padding-top: 3rem;
         padding-bottom: 3rem;
         font-size: 3rem;
     }
-
+/* ------------------button------------------ */
+    button:hover{
+        transform: scale(1.05);
+    }
+    #more{
+        padding: 0.4rem 0.6rem;
+    }
 }
 
 /* ------------------ Fonts ------------------ */

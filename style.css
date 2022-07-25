@@ -41,8 +41,7 @@ nav{
 }
 
 ul{
-    visibility: hidden;
-    display: flex;
+    display: none;
     flex-direction: row;
     padding: var(--nav_block_padding) 0;
 }
@@ -103,7 +102,7 @@ ul li a:hover{
 /* ------------------container common------------------ */
 .container{
     width: calc(100% - (2 * var(--container_padding)));
-    padding: var(--container_padding);    
+    padding: var(--container_padding);
 }
 
 /* ------------------Title common------------------ */
@@ -233,6 +232,11 @@ button{
     color: var(--grey);
 }
 
+.pre-btn,
+.nxt-btn {
+    display: none;
+}
+
 /* ------------------ Footer ------------------ */
 footer {
     width: calc(100% - (2 * var(--footer_padding)));
@@ -262,7 +266,7 @@ footer {
     }
 
     ul{
-        visibility: visible;
+        display: flex;
         flex-basis: 8rem;
     }
 
@@ -292,7 +296,7 @@ footer {
     }
 /* ------------------container common------------------ */
     .container{
-        --container_padding: 15rem;
+        --container_padding: 12rem;
         padding-top: 3rem;
         padding-bottom: 3rem;
         font-size: 3rem;
@@ -304,6 +308,43 @@ footer {
     #more{
         padding: 0.4rem 0.6rem;
     }
+
+    /* nxt/prev btn */
+.pre-btn,
+.nxt-btn {
+    padding: 12rem;
+    border: none;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+
+.pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn {
+    right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+    opacity: 0.2;
+}
+
+.pre-btn:hover img{
+    transform: rotate(180deg);
+    opacity: 1;
+}
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
 }
 
 /* ------------------ Fonts ------------------ */

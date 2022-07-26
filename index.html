@@ -4,10 +4,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0" charset='UTF-8' http-equiv="refresh">
         <title>IEI TKMCE</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
 
     </head>
 
@@ -44,7 +41,7 @@
                     <br><br>Interested to be a part of the IEI EEE family?
                 </p>
                 <div class="button-container">
-                    <button>JOIN US</button>
+                    <button id="join-us">JOIN US</button>
                 </div>                
             </div>           
         </section>
@@ -53,6 +50,8 @@
 
         <section class="container">
             <h4 class="title" id="events">OUR EVENTS</h4>
+            <button class="events-pre-btn"><img src="images/arrow.png" alt=""></button>
+            <button class="events-nxt-btn"><img src="images/arrow.png" alt=""></button> 
             <div class="events-upcoming">
                 <div class="row">
                     <div class="card">
@@ -67,17 +66,17 @@
                 </div>
             </div>
             <div class="button-container" >
-                <button id="more">MORE...</button>
+                <button id="more">MORE</button>
             </div>  
         </section>
 
         <!--  ***************************   Our Team  *********************************** -->
 
         <section class="container">
-            <h4 class="title" id="team">OUR TEAM</h4>
-            <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
-            <button class="nxt-btn"><img src="images/arrow.png" alt=""></button> 
-            <div class="our-team">                                                      
+            <h4 class="title" id="team">OUR TEAM</h4>            
+            <div class="our-team">
+                <button class="our-team-pre-btn"><img src="images/arrow.png" alt=""></button>
+                <button class="our-team-nxt-btn"><img src="images/arrow.png" alt=""></button>          
                 <div class="row">                    
                     <div class="card">
                         <img src="images/person female.png">
@@ -113,8 +112,9 @@
                 <img src="logo/youtube-logo.png" alt="youtube">
             </div>
         </footer>        
+        
+    <script src="script.js"></script>
 
     </body>
-
 
 </html>

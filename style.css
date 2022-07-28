@@ -16,6 +16,7 @@
     --Monotype-Corsiva: 'Monotype Corsiva';
     --poppins: 'Poppins';
 
+    --logo_padding_left: 1.5rem;
     --nav_block_padding: 1rem; /*HOME...*/
     --no_of_nav_block_elements: 5;
     --heading_padding: 1.8rem; /* a century of... */
@@ -32,8 +33,10 @@ body{
 /* ------------------Navigation Bar---------- */
 nav{
     height: 6rem;
+    width: calc(100% - var(--logo_padding_left));
     background-color: var(--dark-grey);
-    text-align: center;
+    text-align: left;
+    padding-left: var(--logo_padding_left);
 }
 .logo{
     height: 6rem;
@@ -42,23 +45,6 @@ nav{
 
 ul{
     display: none;
-    flex-direction: row;
-    padding: var(--nav_block_padding) 0;
-}
-
-ul li{
-    text-transform: uppercase;
-    text-align: center;
-}
-
-ul li a {
-    font-size: 1.4rem;
-    font-weight: 100;
-    color: var(--cream);
-}
-
-ul li a:hover{
-    color: var(--orange);
 }
 
 /* ------------------bg image------------------ */
@@ -135,8 +121,8 @@ ul li a:hover{
     text-align: justify;
     padding-top: 2rem;
     font-family: sans-serif;
-    font-size: 1.25rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 /* ------------------Our Events------------------ */
@@ -268,12 +254,28 @@ footer {
 @media only screen and (min-width: 600px) {
     
     nav{
-        height: fit-content;
+        height: 9rem;
+        text-align: center;
     }
 
     ul{
         display: flex;
         flex-basis: 8rem;
+    }
+    
+    ul li{
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    ul li a {
+        font-size: 1.4rem;
+        font-weight: 100;
+        color: var(--cream);
+    }
+
+    ul li a:hover{
+        color: var(--orange);
     }
 
     .overlay{
@@ -307,6 +309,12 @@ footer {
         padding-bottom: 3rem;
         font-size: 3rem;
     }
+/* ------------------about us------------------ */
+    .about .content{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
 /* ------------------button------------------ */
 
 #join-us:hover,#more:hover{

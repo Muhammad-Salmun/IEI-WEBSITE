@@ -17,12 +17,14 @@
     --poppins: 'Poppins';
 
     --logo_padding_left: 1.5rem;
-    --nav_block_padding: 1rem; /*HOME...*/
+    --logo_ht: 3rem;
+    --nav_bar_ht: 9rem; /* grey part in nav bar*/
+    --nav_block_padding: 1rem;
     --no_of_nav_block_elements: 5;
     --heading_padding: 1.8rem; /* a century of... */
     --heading_font_size: 4rem; /*Intitution...*/
     --container_padding: 2rem;
-    --button_font_size: 1rem;
+    --button_font_size: 0.8rem;
     --footer_padding: 1.5rem;
 }
 
@@ -32,17 +34,23 @@ body{
 
 /* ------------------Navigation Bar---------- */
 nav{
-    height: 6rem;
-    width: calc(100% - var(--logo_padding_left));
+    /* height: var(--logo_ht); */
+    width: 100%;
     background-color: var(--dark-grey);
     text-align: left;
-    padding-left: var(--logo_padding_left);
+    
 }
 .logo{
-    height: 6rem;
+    height: var(--logo_ht);
     width: auto;
+    padding-left: var(--logo_padding_left);
 }
-
+.more-btn{
+    height: 2rem;
+    width: auto;
+    padding: 0.55rem 0.55rem;
+    float: right;
+}
 ul{
     display: none;
 }
@@ -254,13 +262,23 @@ footer {
 @media only screen and (min-width: 600px) {
     
     nav{
-        height: 9rem;
-        text-align: center;
+        height: var(--nav_bar_ht);
+        text-align: center;            
+        position: fixed;
+        top: 0;
+        z-index: 9999; 
     }
-
+    .logo{
+        --logo_ht: 4.5rem;
+        padding: 0;
+    }
+    .more-btn{
+        display: none;
+    }
     ul{
         display: flex;
         flex-basis: 8rem;
+        padding: var(--nav_block_padding) 0;        
     }
     
     ul li{
@@ -280,6 +298,7 @@ footer {
 
     .overlay{
         height: 70vh;
+        padding-top: var(--nav_bar_ht);
     }
 
     .heading-text-container{

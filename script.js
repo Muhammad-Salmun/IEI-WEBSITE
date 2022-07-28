@@ -1,9 +1,9 @@
+/////////////////////// nav bar /////////////////////////////////////////////
+
+///////////////////////nav btn for events /////////////////////////////////////////////
 const eventsContainers = [...document.querySelectorAll('.events-upcoming')];
 const eventsNxtBtn = [...document.querySelectorAll('.events-nxt-btn')];
 const eventsPreBtn = [...document.querySelectorAll('.events-pre-btn')];
-const ourTeamContainers = [...document.querySelectorAll('.our-team')];
-const ourTeamNxtBtn = [...document.querySelectorAll('.our-team-nxt-btn')];
-const ourTeamPreBtn = [...document.querySelectorAll('.our-team-pre-btn')];
 
 eventsContainers.forEach((item, i) => {
         let containerDimensions = item.getBoundingClientRect();
@@ -17,6 +17,11 @@ eventsContainers.forEach((item, i) => {
             item.scrollLeft -= containerWidth;
         })
     })
+
+//////////////////////nav btn for excom /////////////////////////////////////////////
+const ourTeamContainers = [...document.querySelectorAll('.our-team')];
+const ourTeamNxtBtn = [...document.querySelectorAll('.our-team-nxt-btn')];
+const ourTeamPreBtn = [...document.querySelectorAll('.our-team-pre-btn')];
 
 ourTeamContainers.forEach((item, i) => {
     let containerDimensions = item.getBoundingClientRect();

@@ -4,7 +4,7 @@
     width: 100%;
     text-decoration: none;
     list-style: none;
-    font-family:"Poppins", sans-serif;
+    font-family: 'Merriweather', serif;
 }
 
 :root{
@@ -14,13 +14,11 @@
     --white: #fff;
     --orange: #f13a11;
     --Monotype-Corsiva: 'Monotype Corsiva';
-    --poppins: 'Poppins';
 
     --logo_padding_left: 1.5rem;
     --logo_ht: 3rem;
-    --nav_bar_ht: 9rem; /* grey part in nav bar*/
+    --nav_bar_ht: 9rem; /* light black part in nav bar*/
     --nav_block_padding: 1rem;
-    --no_of_nav_block_elements: 5;
     --heading_padding: 1.8rem; /* a century of... */
     --heading_font_size: 4rem; /*Intitution...*/
     --container_padding: 2rem;
@@ -107,7 +105,7 @@ ul{
 .title{
     position: relative;
     width: max-content;
-    font-family: sans-serif;
+    font-family: 'Merriweather', serif;
     font-size: 1.8rem;
     font-weight: 400;
     color: var(--grey);
@@ -128,7 +126,7 @@ ul{
 .about .content{
     text-align: justify;
     padding-top: 2rem;
-    font-family: sans-serif;
+    font-family: 'Merriweather', serif;
     font-size: 1rem;
     line-height: 1.5rem;
 }
@@ -207,7 +205,6 @@ button{
     padding: .75rem;
     display: block;
     text-align: center;    
-    font-family: sans-serif;
     color: var(--dark-grey);
     text-shadow: var(--white);
 }
@@ -220,6 +217,7 @@ button{
 
 .our-team .card h5{
     padding: 0.3rem;
+    font-family: 'Merriweather', serif;
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--dark-grey);
@@ -351,7 +349,7 @@ footer {
     position: absolute;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #eee 100%);
     cursor: pointer;
     z-index: 8;
     height: 22rem;
@@ -387,6 +385,9 @@ footer {
 }
 
 /* ------------------ Fonts ------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 @font-face {
 	font-family: 'OldeEnglish';
 	src:url('fonts/OldeEnglish.woff');

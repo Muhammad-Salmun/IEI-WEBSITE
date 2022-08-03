@@ -4,7 +4,7 @@
     width: 100%;
     text-decoration: none;
     list-style: none;
-    font-family: 'Merriweather', serif;
+    font-family: "Poppins", sans-serif;
 }
 
 :root{
@@ -158,7 +158,7 @@ ul{
     max-width: 90%;
     border-radius: 1rem;
 }
-
+/* 
 .events-upcoming .card h5{
     padding: 4rem 0rem 2.8rem;
     font-family:sans-serif;
@@ -166,22 +166,18 @@ ul{
     font-weight: 500;
     color: var(--white);
     text-shadow: var(--dark-grey);
-}
+} */
 
 /* ------------------ Button - learn more ------------------ */
-.button-container{
+.button-container{    
+    width: fit-content;
+    display: block;
     padding-top: 1rem;
 }
 
 button{
     width: fit-content;
     
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: var(--button_font_size);
-    line-height: calc(var(--button_font_size) + 0.5);
-    letter-spacing: 0.1rem;
-    color:var(--white);
     background-color: black;  
     border-radius: 0.6rem;
 
@@ -189,9 +185,66 @@ button{
     
 }
 
+.button-container a{
+    background-color: black;  
+    border-radius: 0.6rem;
+    padding: 0.9rem 2rem;
+
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: var(--button_font_size);
+    line-height: calc(var(--button_font_size) + 0.5);
+    letter-spacing: 0.1rem;
+    color:var(--white);
+}
+
+/* nxt/prev btn */
+.events-pre-btn,
+.events-nxt-btn,
+.our-team-pre-btn,
+.our-team-nxt-btn {
+    border: none;
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #eee 100%);
+    cursor: pointer;
+    z-index: 8;
+    height: 22rem;
+}
+.events-pre-btn,
+.events-nxt-btn{
+    height: 30rem;
+}
+.events-pre-btn,
+.our-team-pre-btn {
+    left: 2rem;    
+    transform: rotate(180deg);
+}
+
+.events-nxt-btn,
+.our-team-nxt-btn {
+    right: 2rem;
+}
+
+.events-pre-btn img,
+.events-nxt-btn img,
+.our-team-pre-btn img,
+.our-team-nxt-btn img {
+    opacity: 0.2;
+}
+
+.events-pre-btn:hover img,
+.our-team-pre-btn:hover img,
+.events-nxt-btn:hover img,
+.our-team-nxt-btn:hover img {
+  opacity: 1;
+}
+
 /* ------------------ Our Team ------------------ */
 .our-team{
-    height: 22rem;
+    height: 16rem;
     padding-top: 4rem;
     overflow-x: auto;
     overflow-y: hidden;
@@ -202,7 +255,7 @@ button{
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 13rem;
-    padding: .75rem;
+    padding: .7rem;
     display: block;
     text-align: center;    
     color: var(--dark-grey);
@@ -211,20 +264,20 @@ button{
 
 .our-team .row .card > img{
     border-radius: 1rem;
-    height: 14rem;
-    max-width: 12rem;
+    height: 10rem;
+    max-width: 8rem;
 }
 
 .our-team .card h5{
     padding: 0.3rem;
-    font-family: 'Merriweather', serif;
-    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
     font-weight: 500;
     color: var(--dark-grey);
 }
 
 .our-team .card h6{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--grey);
 }
@@ -336,50 +389,17 @@ footer {
 
 #join-us:hover,#more:hover{
     transform: scale(1.05);
-    color:var(--orange);
-} 
+}
 
-    /* nxt/prev btn */
+#join-us a:hover,#more a:hover{
+    color:var(--orange);
+}
+
 .events-pre-btn,
 .events-nxt-btn,
 .our-team-pre-btn,
 .our-team-nxt-btn {
-    border: none;
     display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #eee 100%);
-    cursor: pointer;
-    z-index: 8;
-    height: 22rem;
-}
-.events-pre-btn,
-.events-nxt-btn{
-    height: 30rem;
-}
-.events-pre-btn,
-.our-team-pre-btn {
-    left: 2rem;    
-    transform: rotate(180deg);
-}
-
-.events-nxt-btn,
-.our-team-nxt-btn {
-    right: 2rem;
-}
-
-.events-pre-btn img,
-.events-nxt-btn img,.our-team-pre-btn img,
-.our-team-nxt-btn img {
-    opacity: 0.2;
-}
-
-.events-pre-btn:hover img,
-.our-team-pre-btn:hover img,
-.events-nxt-btn:hover img,
-.our-team-nxt-btn:hover img {
-  opacity: 1;
 }
 
 }

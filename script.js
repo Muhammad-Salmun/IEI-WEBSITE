@@ -1,5 +1,8 @@
 /////////////////////// nav bar /////////////////////////////////////////////
-
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+    document.getElementById("mobMenu").classList.toggle('open');
+}
 ///////////////////////nav btn for events /////////////////////////////////////////////
 const eventsContainers = [...document.querySelectorAll('.events-upcoming')];
 const eventsNxtBtn = [...document.querySelectorAll('.events-nxt-btn')];

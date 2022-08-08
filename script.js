@@ -11,7 +11,6 @@ const eventsPreBtn = [...document.querySelectorAll('.events-pre-btn')];
 ourEventsContainers.forEach((item, i) => {
     let containerDimensions = item.getBoundingClientRect();
     let containerWidth = containerDimensions.width;
-    console.log('event:' + containerWidth)
     eventsNxtBtn[i].addEventListener('click', () => {
         item.scrollLeft += containerWidth;
     })
@@ -29,8 +28,6 @@ const ourTeamPreBtn = [...document.querySelectorAll('.our-team-pre-btn')];
 ourTeamContainers.forEach((item, i) => {
     let containerDimensions = item.getBoundingClientRect();
     let containerWidth = containerDimensions.width;
-    
-    console.log('team:' + containerWidth)
 
     ourTeamNxtBtn[i].addEventListener('click', () => {
         item.scrollLeft += containerWidth/4;

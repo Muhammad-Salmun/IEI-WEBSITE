@@ -225,31 +225,12 @@ ul li a:hover{
     max-width: 90%;
     border-radius: 1rem;
 }
-/* 
-.events-upcoming .card h5{
-    padding: 4rem 0rem 2.8rem;
-    font-family:sans-serif;
-    font-size: 4rem;
-    font-weight: 500;
-    color: var(--white);
-    text-shadow: var(--dark-grey);
-} */
 
 /* ------------------ Button - learn more ------------------ */
 .button-container{    
     width: fit-content;
     display: block;
     padding-top: 1rem;
-}
-
-button{
-    width: fit-content;
-    
-    background-color: black;  
-    border-radius: 0.6rem;
-
-    padding: 0.9rem 2rem;
-    
 }
 
 .button-container a{
@@ -263,9 +244,20 @@ button{
     line-height: calc(var(--button_font_size) + 0.5);
     letter-spacing: 0.1rem;
     color:var(--white);
+    white-space: nowrap;
 }
 
-/* nxt/prev btn */
+/* ---------------- nxt/prev btn ------------------- */
+button{
+    width: fit-content;
+    
+    background-color: black;  
+    border-radius: 0.6rem;
+
+    padding: 0.9rem 2rem;
+    
+}
+
 .events-pre-btn,
 .events-nxt-btn,
 .our-team-pre-btn,
@@ -277,7 +269,6 @@ button{
     align-items: center;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #eee 100%);
     cursor: pointer;
-    z-index: 8;
     height: 22rem;
 }
 .events-pre-btn,

@@ -4,22 +4,22 @@ function toggleMobileMenu(menu) {
     document.getElementById("mobMenu").classList.toggle('open');
 }
 ///////////////////////nav btn for events /////////////////////////////////////////////
-const eventsContainers = [...document.querySelectorAll('.events-upcoming')];
+const ourEventsContainers = [...document.querySelectorAll('.events-upcoming')];
 const eventsNxtBtn = [...document.querySelectorAll('.events-nxt-btn')];
 const eventsPreBtn = [...document.querySelectorAll('.events-pre-btn')];
 
-eventsContainers.forEach((item, i) => {
-        let containerDimensions = item.getBoundingClientRect();
-        let containerWidth = containerDimensions.width;
-    
-        eventsNxtBtn[i].addEventListener('click', () => {
-            item.scrollLeft += containerWidth;
-        })
-    
-        eventsPreBtn[i].addEventListener('click', () => {
-            item.scrollLeft -= containerWidth;
-        })
+ourEventsContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+    console.log('event:' + containerWidth)
+    eventsNxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
     })
+
+    eventsPreBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
 
 //////////////////////nav btn for excom /////////////////////////////////////////////
 const ourTeamContainers = [...document.querySelectorAll('.our-team')];
@@ -29,13 +29,15 @@ const ourTeamPreBtn = [...document.querySelectorAll('.our-team-pre-btn')];
 ourTeamContainers.forEach((item, i) => {
     let containerDimensions = item.getBoundingClientRect();
     let containerWidth = containerDimensions.width;
+    
+    console.log('team:' + containerWidth)
 
     ourTeamNxtBtn[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth;
+        item.scrollLeft += containerWidth/4;
     })
 
     ourTeamPreBtn[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth;
+        item.scrollLeft -= containerWidth/4;
     })
 })
 

@@ -181,6 +181,7 @@ ul li a:hover{
     font-weight: 400;
     color: var(--grey);
     line-height: 5rem;
+    white-space: nowrap;
 }
 
 .title::after{

@@ -24,7 +24,8 @@
     --heading_font_size: 4rem; /*Intitution...*/
     --container_padding: 2rem;
     --button_font_size: 0.8rem;
-    --footer_padding: 1.5rem;
+    --footer_padding: 1rem;
+    --footer-logo-width: 1.5rem;
 }
 
 body{
@@ -353,20 +354,39 @@ button{
 footer {
     width: calc(100% - (2 * var(--footer_padding)));
     padding: var(--footer_padding);
-    margin-top: auto;
+
     background-color: #000;
     color: #fff;
     font-size:30px;
     font-weight:bold;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
 
 .social-media{
-    padding-left: 1rem;
-} 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
 .social-media > img{
-    width: 1.5rem;
-    border-radius: 2rem;
+    width: var(--footer-logo-width);
+    height: var(--footer-logo-width);
+}
+
+#iei,
+#fb{    
+    border-radius: calc(var(--footer-logo-width)/2);
+}
+#insta{
+    border-radius: 0.35rem;
+}
+#yt{
+    width: 2rem;
+    border-radius: 0.2rem;
 }
 
 /* styles for browsers larger than 600px; */
@@ -452,6 +472,24 @@ footer {
 .our-team-pre-btn,
 .our-team-nxt-btn {
     display: flex;
+}
+
+footer{
+    --footer_padding: 6rem; /* needs to change variable since width of footer is calculated based on this var*/
+    padding: 1.5rem var(--footer_padding);
+}
+
+.social-media{
+    display: block;
+    text-align: left;
+}
+
+.social-media > img{
+    margin-left: 1.5rem;
+}
+
+.social-media > img:hover{
+    transform: scale(1.2);
 }
 
 }

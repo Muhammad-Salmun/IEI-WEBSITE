@@ -363,30 +363,75 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 
+}
+
+footer h7{
+    display: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.tkmce, .ieindia{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tkmce a, .ieindia a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    padding-left: 0.5rem;
+
+}
+
+.tkmce > img, .ieindia > img{
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
 }
 
 .social-media{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-evenly;
 }
 
-.social-media > img{
+.social-media h7{
+    display: none;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.social-media a{
+    width: fit-content;
+}
+
+.social-media a > img{
     width: var(--footer-logo-width);
     height: var(--footer-logo-width);
 }
 
-#iei,
+.social-media a > img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
 #fb{    
     border-radius: calc(var(--footer-logo-width)/2);
 }
 #insta{
-    border-radius: 0.35rem;
+    border-radius: calc(var(--footer-logo-width)/4.29);
 }
 #yt{
-    width: 2rem;
-    border-radius: 0.2rem;
+    width: calc(var(--footer-logo-width)/0.71);
+    border-radius: calc(var(--footer-logo-width)/7.5);
 }
 
 /* styles for browsers larger than 600px; */
@@ -459,39 +504,38 @@ footer {
 
 /* ------------------button------------------ */
 
-#join-us:hover,#more:hover{
-    transform: scale(1.05);
-}
+    #join-us:hover,#more:hover{
+        transform: scale(1.05);
+    }
 
-#join-us a:hover,#more a:hover{
-    color:var(--orange);
-}
+    #join-us a:hover,#more a:hover{
+        color:var(--orange);
+    }
 
-.events-pre-btn,
-.events-nxt-btn,
-.our-team-pre-btn,
-.our-team-nxt-btn {
-    display: flex;
-}
+    .events-pre-btn,
+    .events-nxt-btn,
+    .our-team-pre-btn,
+    .our-team-nxt-btn {
+        display: flex;
+    }
 
-footer{
-    --footer_padding: 6rem; /* needs to change variable since width of footer is calculated based on this var*/
-    padding: 1.5rem var(--footer_padding);
-}
+    footer{
+        --footer_padding: 12rem; /* needed as to change variable since width of footer is calculated based on this var*/
+        padding: 1.5rem var(--footer_padding);
+    }
 
-.social-media{
-    display: block;
-    text-align: left;
-}
+    
+    footer h7/* text: copyright */, .social-media h7 /* text: connect */{
+        display: block;
+    }
 
-.social-media > img{
-    margin-left: 1.5rem;
-}
+    .tkmce, .ieindia{
+        display: flex;
+    }
 
-.social-media > img:hover{
-    transform: scale(1.2);
-}
-
+    .tkmce > img, .ieindia > img{
+        display: block;
+    }
 }
 
 /* ------------------ Fonts ------------------ */
